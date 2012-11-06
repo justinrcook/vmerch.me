@@ -19,6 +19,7 @@ GEM
     fssm (0.2.9)
     haml (3.1.7)
     hike (1.2.1)
+    hpricot (0.8.6)
     http_router (0.10.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -100,4 +101,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hpricot
   middleman (~> 3.0.6)
