@@ -16,14 +16,13 @@
 
 	%body
 		%header.container
-			.page-header
-				.row
-					%h1.span8
-						%a{ :href => '/' }
-							%img{ :src => '/img/logo.png', :alt => '' }
-					.span4.say_hello
-						%a{ :href => 'mailto:hello@vmerch.me' }
-							Say <span>hello</span>@vmerch.me
+			.row
+				%h1.span8
+					%a{ :href => '/' }
+						%img{ :src => '/img/logo.png', :alt => '' }
+				.span4.say_hello
+					%a{ :href => 'mailto:hello@vmerch.me' }
+						Say <span>hello</span>@vmerch.me
 
 		.container
 			= yield
