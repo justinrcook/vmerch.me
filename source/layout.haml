@@ -25,6 +25,14 @@
 						Say <span>hello</span>@vmerch.me
 
 		.container
+			%nav.clearfix
+				%ul.unstyled.pull-right
+					%li= link_to 'Web', '#'
+					%li= link_to 'Print', '#'
+					%li= link_to 'Illlustration', '#'
+					%li= link_to 'Tangiables', '#'
+					%li= link_to 'Resume', '#'
+
 			= yield
 
 	%footer.container

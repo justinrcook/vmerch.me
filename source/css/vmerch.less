@@ -26,3 +26,22 @@ header {
 		}
 	}
 }
+
+nav {
+	ul li {
+		display: inline;
+		margin-left: 5px;
+
+		a {
+			color: @darkBlue;
+			font-weight: bold;
+			font-size: (@baseFontSize + 4);
+			text-transform: uppercase;
+
+			&:hover {
+				color: @mediumBlue;
+				text-decoration: none;
+			}
+		}
+	}
+}
