@@ -13,6 +13,7 @@
 
 		/ Le Styles
 		%link{ :href => "css/vmerch.less", :rel => "stylesheet" }/
+		%link{ :href => "css/colorbox.css", :rel => "stylesheet" }/
 
 	%body
 		%header.container
@@ -45,4 +46,10 @@
 	%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
 	:javascript
 		window.jQuery || document.write('<script src="/js/jquery.1.8.2.min.js"><\/script>')
-	%script{:src => "/js/jquery.colorbox-min.js"}		
+	%script{:src => "/js/jquery.colorbox-min.js"}
+
+	/ Colorbox
+	:javascript
+		if ($(".colorbox").length > 0) {
+			$(".thumbnail").colorbox({rel:"thumbnail"});
+		}
