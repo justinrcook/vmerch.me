@@ -1,0 +1,10 @@
+- content_for(:title, 'Print')
+
+.print.colorbox
+	.row
+		.span9.offset3
+			%ul.thumbnails
+				- %w(ten_skaters tasty_treats spicy_burger rife_cards phils_frozen_hot_choc masters_war lightenup_logo internship icpf florida_postcard deck_business_card collage chocolate_chip chicken_caesar camel_logo).each do |job|
+					%li.span3
+						%a.thumbnail{ :href => "/img/print/#{job}.png", :'data-target' => 'lightbox' }
+							%div{ :class => job }
