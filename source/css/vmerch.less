@@ -50,3 +50,37 @@ footer {
 	color: @darkBlue;
 	text-align: center;
 }
+
+.illustration {
+	.thumbnails {
+		a {
+
+			div {
+				background: url(/img/illustrations/illustrations-sprite.png) no-repeat;
+				width: 210px;
+				height: 145px;
+
+				&.tech_illustration {
+					background-position: 0 0;
+					&:hover { background-position: 0 -145px; }
+				}
+
+				&.pick_me {
+					background-position: 0 -290px;
+					&:hover { background-position: 0 -435px; }
+				}
+
+				&.dance_team_pink {
+					background-position: 0 -580px;
+					&:hover { background-position: 0 -725px; }
+				}
+
+				&.awards_day_poster {
+					background-position: 0 -1015px;
+					&:hover { background-position: 0 -870px; width: 210px; height: 145px; }
+				}
+
+			}
+		}
+	}
+}
