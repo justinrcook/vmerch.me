@@ -8,7 +8,9 @@
 	%head
 		%meta{:charset => "utf-8"}/
 		%meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
-		%title Valerie Merchant
+		%title
+			= yield_content(:title)
+			| Valerie Merchant
 		%meta{:content => "width=device-width", :name => "viewport"}/
 
 		/ Le Styles
@@ -34,6 +36,7 @@
 					%li= link_to 'Tangibles', '/tangibles.html'
 					%li= link_to 'Resume', '/resume.html'
 
+			%h1= yield_content(:title)
 			= yield
 
 	%footer.container
