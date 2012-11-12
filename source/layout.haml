@@ -14,15 +14,15 @@
 		%meta{:content => "width=device-width", :name => "viewport"}/
 
 		/ Le Styles
-		%link{ :href => "css/vmerch.less", :rel => "stylesheet" }/
-		%link{ :href => "css/colorbox.css", :rel => "stylesheet" }/
+		%link{ :href => "#{css_dir}/vmerch.less", :rel => "stylesheet" }/
+		%link{ :href => "#{css_dir}/colorbox.css", :rel => "stylesheet" }/
 
 	%body
 		%header.container
 			.row
 				%h1.span8
 					%a{ :href => '/' }
-						%img{ :src => '/img/logo.png', :alt => '' }
+						%img{ :src => '#{images_dir}/logo.png', :alt => '' }
 				.span4.say_hello
 					%a{ :href => 'mailto:hello@vmerch.me' }
 						Say <span>hello</span>@vmerch.me
@@ -48,8 +48,8 @@
 		==================================================
 	%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
 	:javascript
-		window.jQuery || document.write('<script src="/js/jquery.1.8.2.min.js"><\/script>')
-	%script{:src => "/js/jquery.colorbox-min.js"}
+		window.jQuery || document.write('<script src="#{js_dir}/jquery.1.8.2.min.js"><\/script>')
+	%script{:src => "#{js_dir}/jquery.colorbox-min.js"}
 
 	/ Colorbox
 	:javascript

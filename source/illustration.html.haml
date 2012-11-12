@@ -6,5 +6,5 @@
 			%ul.thumbnails
 				- %w(tech_illustration pick_me dance_team awards_day_poster).each do |job|
 					%li.span3
-						%a.thumbnail{ :href => "/img/illustrations/#{job}.png", :'data-target' => 'lightbox' }
+						%a.thumbnail{ :href => "#{images_dir}/illustrations/#{job}.png", :'data-target' => 'lightbox' }
 							%div{ :class => job }
