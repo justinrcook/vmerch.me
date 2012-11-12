@@ -1,0 +1,23 @@
+- content_for(:title, 'Resume')
+
+%ul#resume.nav.nav-tabs
+	%li.active= link_to 'Experience', '#experience', { :'data-toggle' => 'tab' }
+	%li= link_to 'Education', '#education', { :'data-toggle' => 'tab' }
+	%li= link_to 'Awards & Honors', '#awards_honor', { :'data-toggle' => 'tab' }
+
+#resumeContent.tab-content
+	#experience.tab-pane.active
+		= partial 'resume_experience'
+	#education.tab-pane
+		= partial 'resume_education'
+	#awards_honor.tab-pane
+		= partial 'resume_awards_honors'
+
+- content_for :footer do
+	:javascript
+		$(function() {
+			$('#resume a').click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+			});
+		});
