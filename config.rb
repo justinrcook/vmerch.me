@@ -74,3 +74,14 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+###
+# Deployment via rsync with middleman-deploy
+###
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.user		= "justinrcook"
+  deploy.host		= "vmerch.me"
+  deploy.path		= "/home/justinrcook/websites/vmerch.me/current/public"
+  deploy.clean	= true
+end
