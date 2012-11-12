@@ -1,14 +1,10 @@
-%h1 Web
+- content_for(:title, 'Web')
 
-.row
-	.span9.offset3
-		%ul.thumbnails
-			%li.span3
-				%a.thumbnail{ :href => '#' }
-					%img{ :src => 'http://placehold.it/260x180' }
-			%li.span3
-				%a.thumbnail{ :href => '#' }
-					%img{ :src => 'http://placehold.it/260x180' }
-			%li.span3
-				%a.thumbnail{ :href => '#' }
-					%img{ :src => 'http://placehold.it/260x180' }
+.web.colorbox
+	.row
+		.span9.offset3
+			%ul.thumbnails
+				- %w(union_grove princeton first_summit eccu csbmf cbtn).each do |job|
+					%li.span3
+						%a.thumbnail{ :href => "#{images_dir}/web/#{job}.png", :'data-target' => 'lightbox' }
+							%div{ :class => job }			
