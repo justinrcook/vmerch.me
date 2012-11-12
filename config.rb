@@ -50,6 +50,7 @@
 set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
+set :site_name, 'Valerie Merchant'
 
 # Build-specific configuration
 configure :build do

@@ -12,7 +12,7 @@
 			- if yield_content(:title)
 				= yield_content(:title)
 				|
-			Valerie Merchant
+			= @site_name
 		%meta{:content => "width=device-width", :name => "viewport"}/
 
 		/ Le Styles
@@ -42,7 +42,8 @@
 			= yield
 
 	%footer.container
-		&copy; Valerie Merchant
+		&copy;
+		= @site_name
 		= Time.now.strftime("%Y")
 
 	/
