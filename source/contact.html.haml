@@ -1,21 +1,10 @@
 - content_for(:title, 'Contact Me')
 
-.row
-	.span6
-		%address
-			1235 Wallgate Ave.
-			%br
-			Waterloo, Iowa 50701
-			%br
-			%abbr{ :title => 'Phone'} P:
-			641-430-3590
+%address
+	%strong= @site_name
+	%br
+	= link_to 'hello@vmerch.me', 'mailto:hello@vmerch.me'
 
-		%address
-			%strong= @site_name
-			%br
-			= link_to 'hello@vmerch.me', 'mailto:hello@vmerch.me'
-
-	.span6
-		%ul.unstyled
-			%li= link_to 'Twitter', 'http://twitter.com/valeriemerchant'
-			%li= link_to 'LinkedIn', 'http://www.linkedin.com/in/valeriemerchant'
+%ul.unstyled
+	%li= link_to 'Twitter', 'http://twitter.com/valeriemerchant'
+	%li= link_to 'LinkedIn', 'http://www.linkedin.com/in/valeriemerchant'
