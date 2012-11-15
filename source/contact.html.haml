@@ -1,10 +1,14 @@
 - content_for(:title, 'Contact Me')
 
-%address
-	%strong= @site_name
-	%br
-	= link_to 'hello@vmerch.me', 'mailto:hello@vmerch.me'
+%h4 Currently taking small freelance requests.
+%h4 Please contact me via email.
 
-%ul.unstyled
-	%li= link_to 'Twitter', 'http://twitter.com/valeriemerchant'
-	%li= link_to 'LinkedIn', 'http://www.linkedin.com/in/valeriemerchant'
+%p
+	%i.icon-email
+	= link_to 'Say hello@vmerch.me', 'mailto:hello@vmerch.me'
+%p
+	%i.icon-linkedin
+	= link_to 'LinkedIn', 'http://www.linkedin.com/in/valeriemerchant'
+%p
+	%i.icon-twitter
+	= link_to 'Twitter', 'http://twitter.com/valeriemerchant'
