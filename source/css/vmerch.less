@@ -243,6 +243,21 @@ footer {
 	p { margin-bottom: (@baseLineHeight * 2); }
 } //.resume
 
+ul.contact_info {
+	margin-top: (@baseLineHeight * 2);
+	li {
+		margin-bottom: (@baseLineHeight / 2);
+		a {
+			position: relative;
+			top: 10px;
+			left: 5px;
+			font-size: (@baseFontSize + 2);
+			font-weight: bold;
+			color: @mediumBlue;
+		}
+	}
+}
+
 .icon-email, .icon-linkedin, .icon-twitter {
 	background: url(/img/contact_sprite.png) 0 0 no-repeat;
 	width: 36px;
