@@ -4,7 +4,7 @@
 	.row
 		.span9.offset3
 			%ul.thumbnails
-				- %w(light_bulb light_bulb_flat card_holder elephant).each do |job|
+				- %w(light_bulb_flat light_bulb card_holder elephant).each do |job|
 					%li.span3
 						%a.thumbnail{ :href => "#{images_dir}/tangibles/#{job}.png", :'data-target' => 'lightbox' }
 							%div{ :class => job }				
