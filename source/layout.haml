@@ -19,7 +19,7 @@
 		%link{ :href => "#{css_dir}/vmerch.css", :rel => "stylesheet" }/
 		%link{ :href => "#{css_dir}/colorbox.css", :rel => "stylesheet" }/
 
-	%body
+	%body{ :class => request.path.gsub('.html', '') }
 		%header.container
 			.row
 				%h1.span8
@@ -32,12 +32,12 @@
 		.container
 			%nav.clearfix
 				%ul.unstyled.pull-right
-					%li= link_to 'Web', '/web.html'
-					%li= link_to 'Print', '/print.html'
-					%li= link_to 'Illustration', '/illustration.html'
-					%li= link_to 'Tangibles', '/tangibles.html'
-					%li= link_to 'Resume', '/resume.html'
-					%li= link_to 'Contact', '/contact.html'
+					%li.web= link_to 'Web', '/web.html'
+					%li.print= link_to 'Print', '/print.html'
+					%li.illustration= link_to 'Illustration', '/illustration.html'
+					%li.tangibles= link_to 'Tangibles', '/tangibles.html'
+					%li.resume= link_to 'Resume', '/resume.html'
+					%li.contact= link_to 'Contact', '/contact.html'
 
 			%h1= yield_content(:title)
 			= yield
