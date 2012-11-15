@@ -8,6 +8,13 @@
 
 body {
 	background: #272B30 url(/img/dark_wood.png) repeat top center;
+
+	&.web nav li.web a,
+	&.print nav li.print a,
+	&.illustration nav li.illustration a,
+	&.tangibles nav li.tangibles a,
+	&.resume nav li.resume a,
+	&.contact nav li.contact a { color: @mediumBlue; }
 }
 
 header {
@@ -47,13 +54,6 @@ nav {
 		}
 	}
 }
-
-.web nav li.web a,
-.print nav li.print a,
-.illustration nav li.illustration a,
-.tangibles nav li.tangibles a,
-.resume nav li.resume a,
-.contact nav li.contact a { color: @mediumBlue; }
 
 footer {
 	color: @darkBlue;
