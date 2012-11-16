@@ -4,6 +4,7 @@
 	%li.active= link_to 'Experience', '#experience', { :'data-toggle' => 'tab' }
 	%li= link_to 'Education', '#education', { :'data-toggle' => 'tab' }
 	%li= link_to 'Awards & Honors', '#awards_honor', { :'data-toggle' => 'tab' }
+	%li.pull-right= link_to 'Printable PDF', '#printable', { :'data-toggle' => 'tab' }
 
 #resumeContent.tab-content
 	#experience.tab-pane.active
@@ -12,6 +13,8 @@
 		= partial 'resume_education'
 	#awards_honor.tab-pane
 		= partial 'resume_awards_honors'
+	#printable.tab-pane
+		%p= link_to 'Download a printable PDF of my resume', '/files/merchant_valerie_resume_2012.pdf'
 
 - content_for :footer do
 	:javascript
